@@ -1,0 +1,201 @@
+/* ----------ここからメイン---------- */
+main {
+  font-family: serif;
+}
+
+div[class ^="event"] {
+  font-size: 30px;
+  margin: 20px 0;
+  text-align: center;
+  font-weight: bold;
+  line-height: 2.2;
+  text-shadow: 2px 3px 3px silver;
+}
+
+.event_info p {
+  margin: 0 auto;
+  padding-bottom: 30px;
+  width: 800px;
+  line-height: normal;
+  letter-spacing: 2px;
+
+}
+
+#calendar {
+  max-width: 800px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+.event_contents {
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 360px 360px ; /*高さを指定*/
+  grid-template-columns: 50px 1fr 1fr 50px; /*幅を指定*/
+}
+.contentsA {
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+}
+.contentsB {
+  grid-row: 1 / 2;
+  grid-column: 3 / 4;
+}
+.contentsC {
+  grid-row: 2/ 3;
+  grid-column: 2 / 3;
+}
+.contentsD {
+  grid-row: 2 / 3;
+  grid-column: 3/ 4;
+}
+
+.event_contents a .contents  {
+  display: block;
+  margin: 0 auto;
+  height: 300px;
+  border: 1px solid gray;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}
+.event_contents a .contents:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.event_contents .contents_title{
+  margin-top: 20px;
+  text-align: center;
+  font-size: 20px;
+}
+
+@media  screen and  (max-width : 980px) {
+  .event_contents {
+    display: block;
+  }
+  div[class ^= "contents" ]{
+    margin: 40px auto;
+  }
+  .event_contents a > .contents {
+    width: 600px;
+  }
+}
+/* -----ここからイベント開催予定日----- */
+
+/* .event_date {
+    background-image: url("../../image/flame3.png");
+    background-repeat: no-repeat;
+    background-position: center;
+} */
+
+
+.list {
+  border: 1px solid gray ;
+  margin: 0  50px 30px 50px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 1s;
+}
+
+/* addでshowクラス追加 */
+.show  {
+  opacity: 1;
+  transform: none;
+}
+
+.list_title {
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+.list_title a {
+  text-decoration: none;
+  color: black;
+}
+.list_title a:hover {
+  text-decoration: underline;
+}
+
+.list .parts {
+  display: flex;
+}
+
+.photo .event_picture {
+  display: block;
+  width: 300px;
+  height: 300px;
+  padding: 5px;
+}
+
+.details ul li {
+ line-height: 2.2;
+ border-bottom: 1px dashed #e5e5e5;
+ padding-left: 100px;
+ margin: 5px;
+ position: relative;
+}
+.details span {
+display: inline-block;
+background-color: rgba(255, 166, 0, 0.3);
+color: black;
+width: 80px;
+height: 32px;
+text-align: center;
+border-radius: 4px;
+position: absolute;
+top: 0;
+left: 0;
+}
+.details ul li a {
+  text-decoration: none;
+  color: rgba(255, 0, 0, 0.363);
+}
+
+.point {
+ padding: 5px;
+ line-height: 1.2;
+}
+
+.entry_btn ul {
+  /* height: 80px; */
+  display: flex;
+  justify-content: space-around;
+}
+
+.entry_btn ul  li {
+  margin: 5px;
+  width: 500px;
+  border: 2px solid #333;
+  background-color:rgba(255, 166, 0);
+  border-radius: 2px;
+}
+
+.entry_btn ul li:hover {
+color: black;
+background-color: rgba(255, 166, 0, 0.3);
+box-shadow: 0 5px 10px black;
+transform: translate(0, -5px);
+}
+
+.btnWhite, .btnGold {
+  display: block;
+  font-size: 20px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  line-height: normal;
+}
+
+@media screen and (max-width:980px) {
+  .list .parts {
+    display: block;
+  }
+  .photo .event_picture {
+    width: 600px;
+    margin: 0 auto;
+  }
+}

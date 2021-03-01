@@ -1,0 +1,74 @@
+/* ----------ここからフッター----------- */
+/* フッター */
+footer{
+  height: 100px;
+  padding-top: 20px;
+  text-align:center;
+  color:silver;
+  background-color:rgb(7, 7, 51);
+ }
+
+
+ footer ul {
+   display:flex;
+   width: 240px;
+   margin: auto;
+ }
+/*
+    アイコンの背景色が変わる
+*/
+.pattern-03 .icon-wrap {
+  display: block;
+  color: white;
+}
+
+.pattern-03 .icon-wrap.icon-wrap-instagram {
+  /* Instagramのアイコンは縦に長い(= 正方形ではない)ので左右のpaddingを少し多めにとる */
+  padding: 7px 9.125px;
+}
+
+.pattern-03 .icon-wrap.icon-wrap-facebook,
+.pattern-03 .icon-wrap.icon-wrap-twitter {
+  /* facebookとTwitterのアイコンは正方形なので、上下左右のpaddingの値は同じ */
+  padding: 7px;
+}
+
+.pattern-03 .icon-wrap.icon-wrap-line {
+  /* LINEのアイコンは縦に長い(= 正方形ではない)ので左右のpaddingを少し多めにとる */
+  padding: 7px 10px;
+}
+
+.pattern-03 .icon-wrap:hover {
+  color: white;
+}
+
+.pattern-03.square .icon-wrap:hover {
+  border-radius: 25%; /* 正方形 */
+}
+.pattern-03.circle .icon-wrap:hover {
+  border-radius: 50%; /* 円 */
+}
+
+
+.pattern-03 .icon-wrap:hover.icon-wrap-facebook {
+  background-color: #1877f2;
+}
+
+.pattern-03 .icon-wrap:hover.icon-wrap-twitter {
+  background-color: #1da1f2;
+}
+
+.pattern-03 .icon-wrap:hover.icon-wrap-line {
+  background-color: #00B900;
+}
+
+.pattern-03 .icon-wrap:hover.icon-wrap-instagram {
+  /* 【参考】 https://bungujoshi.com/ */
+  background: -webkit-radial-gradient(32% 106%, circle cover, #ffe17d 0%, #ffcd69 10%, #fa9137 28%, #eb4141 42%, transparent 82%), -webkit-linear-gradient(-45deg, #234bd7 12%, #c33cbe 58%);
+  background: -moz-radial-gradient(32% 106%, circle cover, #ffe17d 0%, #ffcd69 10%, #fa9137 28%, #eb4141 42%, transparent 82%), -moz-linear-gradient(-45deg, #234bd7 12%, #c33cbe 58%);
+  background: -ms-radial-gradient(32% 106%, circle cover, #ffe17d 0%, #ffcd69 10%, #fa9137 28%, #eb4141 42%, transparent 82%), -ms-linear-gradient(-45deg, #234bd7 12%, #c33cbe 58%);
+  background: -o-radial-gradient(32% 106%, circle cover, #ffe17d 0%, #ffcd69 10%, #fa9137 28%, #eb4141 42%, transparent 82%), -o-linear-gradient(-45deg, #234bd7 12%, #c33cbe 58%);
+  background: radial-gradient(circle farthest-corner at 32% 106%, #ffe17d 0%, #ffcd69 10%, #fa9137 28%, #eb4141 42%, transparent 82%), linear-gradient(135deg, #234bd7 12%, #c33cbe 58%);
+}
+
+

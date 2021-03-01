@@ -1,0 +1,54 @@
+.movies{
+  display: flex;
+  text-align: center;
+  margin: 10px;
+}
+
+.movie1{
+  padding:10px;
+  width:75%;
+}
+
+.movie2{
+  padding:10px;
+  width:75%;
+}
+
+.movie3{
+  padding:10px;
+  width:75%;
+}
+
+.movie4{
+  padding:10px;
+  width:75%;
+}
+
+
+section {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+ 
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+  background: url('../images/bg.png') no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+ 
+.bg-white {
+  top: 30px;
+  left: 30px;
+  padding: 20px;
+  color:white;
+}
+
