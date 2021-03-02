@@ -1,0 +1,67 @@
+.first {
+  margin: 50px 0;
+}
+
+.first h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.first p {
+  font-size: 18px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.join {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+}
+
+.common {
+  font-size: 26px;
+  font-weight: bold;
+ text-align: center;
+ margin-bottom: 20px;
+}
+
+.join ul li {
+  font-size: 18px;
+  max-width: 1000px;
+  background-color: #eee;
+  padding: 20px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  border-radius: 5px;
+}
+
+.join ul li:not(:last-child)::after {
+  content: "▼";
+  position: absolute;
+  display: block;
+  left: 49%;
+  margin: 40px 0 0;
+  color: #c5a34d;
+}
+
+.select {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+  margin-bottom: 60px;
+}
+.select_box .box {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+
+

@@ -21,13 +21,13 @@ class ContactController extends Controller
     public function add(Request $request) 
     {
         $post = new contact();
-     
+        
         $post->username = $request->username;
         $post->email = $request->email;
         $post->sex = $request->sex;
         $post->age = $request->age;
         $post->content = $request->content;
-        $post->save();
+        // $post->save();
 
         return view('/contact/show',compact('post'));
     }

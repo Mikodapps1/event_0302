@@ -70,10 +70,7 @@
           </div>
       </div>
       <div class="entry_btn">
-        <ul>
-            <li><a class="btnWhite" href="#">詳細はこちら</a></li>
-            <li><a class="btnGold" href="#">ご予約はこちら</a>
-        </ul>
+        <p><a class="btnGold" href="appointment">ご予約はこちら</a></p>
      </div>
     </section>
 
@@ -104,10 +101,7 @@
           </div>
       </div>
       <div class="entry_btn">
-        <ul>
-            <li><a class="btnWhite" href="#">詳細はこちら</a></li>
-            <li><a class="btnGold" href="#">ご予約はこちら</a>
-        </ul>
+        <p><a class="btnGold" href="appointment">ご予約はこちら</a></p>
       </div>
    </section>
 
@@ -138,10 +132,7 @@
           </div>
       </div>
       <div class="entry_btn">
-        <ul>
-            <li><a class="btnWhite" href="#">詳細はこちら</a></li>
-            <li><a class="btnGold" href="#">ご予約はこちら</a>
-        </ul>
+        <p><a class="btnGold" href="appointment">ご予約はこちら</a></p>
       </div>
     </section>
     <section class="list">
@@ -171,10 +162,7 @@
            </div>
       </div>
       <div class="entry_btn">
-        <ul>
-            <li><a class="btnWhite" href="#">詳細はこちら</a></li>
-            <li><a class="btnGold" href="#">ご予約はこちら</a>
-        </ul>
+        <p><a class="btnGold" href="appointment">ご予約はこちら</a></p>
       </div>
    </section>
 
@@ -205,12 +193,10 @@
           </div>
       </div>
       <div class="entry_btn">
-        <ul>
-            <li><a class="btnWhite" href="#">詳細はこちら</a></li>
-            <li><a class="btnGold" href="#">ご予約はこちら</a>
-        </ul>
+        <p><a class="btnGold" href="appointment">ご予約はこちら</a></p>
       </div>
     </section>
+
     <section class="list">
       <h3 class="list_title">
         <a href="#"><span>12/19(土)クリスマス直前！婚歴理解者party企画★40代中心(37歳～50歳くらいまで）の婚活★恋活パーティー♪本町駅直結のお洒落な...</span>
@@ -238,12 +224,10 @@
           </div>
       </div>
       <div class="entry_btn">
-        <ul>
-            <li><a class="btnWhite" href="#">詳細はこちら</a></li>
-            <li><a class="btnGold" href="#">ご予約はこちら</a>
-        </ul>
+        <p><a class="btnGold" href="appointment">ご予約はこちら</a></p>
       </div>
     </section>
+
     <section class="list">
       <h3 class="list_title">
         <a href="#"><span>12/19(土)クリスマス直前！婚歴理解者party企画★40代中心(37歳～50歳くらいまで）の婚活★恋活パーティー♪本町駅直結のお洒落な...</span>
@@ -271,10 +255,7 @@
           </div>
       </div>
       <div class="entry_btn">
-        <ul>
-            <li><a class="btnWhite" href="#">詳細はこちら</a></li>
-            <li><a class="btnGold" href="#">ご予約はこちら</a>
-        </ul>
+        <p><a class="btnGold" href="appointment">ご予約はこちら</a></p>
       </div>
     </section>
   </section>

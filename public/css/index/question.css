@@ -1,0 +1,62 @@
+.QA {
+  margin: 50px 0;
+}
+
+.QA h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.QA p {
+  font-size: 18px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.QA_content .flame {
+ max-width: 1000px;
+ margin: 0 auto;
+ border-radius: 15px;
+}
+
+.QA_content .flame:not(:first-child){
+ margin-top: 40px;
+}
+
+.QA_content .flame:last-child {
+  margin-bottom: 60px;
+}
+
+.QA_content dt {
+  padding: 10px;
+  font-weight: bold;
+  font-size: 18px;
+}
+.QA_content dd {
+  padding: 10px;
+  font-size: 18px;
+}
+/* 疑似要素でQとAを表示 */
+.QA_content dt:before,
+.QA_content dd:before  {
+  display: inline-block;
+  margin-right: 5px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #FFF;
+  font-weight: bold;
+  border-radius: 50%;
+  font-size: 28px;
+}
+.QA_content dt:before {
+  content: 'Q';
+  background-color: #1aa1ff;
+}
+.QA_content dd:before {
+  content: 'A';
+  background-color: #ffa51a;
+}

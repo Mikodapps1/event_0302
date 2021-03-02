@@ -12,6 +12,8 @@
   font-size: 18px;
   max-width: 1000px;
   margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 form {
@@ -37,6 +39,9 @@ th,td {
   border-radius: 5px;
 }
 
+.contact .event_info {
+  background-color: skyblue;
+}
 
 .contact th {
   font-size: 18px;
@@ -48,6 +53,7 @@ th,td {
  padding: 10px;
 }
 .contact td #username,
+.contact td #furigana,
 .contact td #email,
 .contact td #confirm {
   min-width: 60%;
@@ -55,6 +61,15 @@ th,td {
 
 .contact #age {
   width:  30px;
+}
+
+.contact #number {
+  width:  30px;
+}
+
+.contact #events {
+  width: 80%;
+  height: 42px;
 }
 
 .submit_button {

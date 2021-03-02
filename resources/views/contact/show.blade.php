@@ -10,7 +10,7 @@
 
   
 <p>お名前：{{$post['username']}}</p>
-<p>問い合わせ事項：{{$post['age']}}</p>
+<p>年齢：{{$post['age']}}</p>
 <p>アドレス：{{$post['email']}}</p>
 <p>問い合わせ事項：{{$post['content']}}</p>
 

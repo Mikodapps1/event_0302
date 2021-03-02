@@ -36,10 +36,14 @@
   <link rel="stylesheet" href="css/index/reset.css">
   <link rel="stylesheet" href="css/index/header.css">
   <link rel="stylesheet" href="css/index/schedule.css">
+  <link rel="stylesheet" href="css/index/first_time.css">
+  <link rel="stylesheet" href="css/index/question.css">
   <link rel="stylesheet" href="css/index/contact.css">
   <link rel="stylesheet" href="css/index/footer.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
   <link rel="stylesheet" href="fullcalendar/main.css" />
+  <link rel="stylesheet" href="css/index/home.css">
+  <link rel="stylesheet" href="css/index/movie.css">
 
   <!-- --font-awsome-- -->
   <script src="https://kit.fontawesome.com/720c0d4f32.js" crossorigin="anonymous"></script>

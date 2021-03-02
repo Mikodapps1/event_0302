@@ -158,28 +158,22 @@ left: 0;
  line-height: 1.2;
 }
 
-.entry_btn ul {
-  /* height: 80px; */
-  display: flex;
-  justify-content: space-around;
-}
-
-.entry_btn ul  li {
-  margin: 5px;
+.entry_btn p {
+  margin: 5px auto;
   width: 500px;
   border: 2px solid #333;
   background-color:rgba(255, 166, 0);
   border-radius: 2px;
 }
 
-.entry_btn ul li:hover {
+.entry_btn p:hover {
 color: black;
 background-color: rgba(255, 166, 0, 0.3);
 box-shadow: 0 5px 10px black;
 transform: translate(0, -5px);
 }
 
-.btnWhite, .btnGold {
+.btnGold {
   display: block;
   font-size: 20px;
   width: 100%;

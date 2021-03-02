@@ -32,10 +32,12 @@
 
   <meta name="Key word" content=”Mikodapps,イベント,セミナー,勉強会,コミュニティ,集客,告知,チケット,主催,無料,ソーシャル,梅田,関西,イベント,2021年,飲み会”>
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/index/reset.css">
+   <!-- CSS -->
+   <link rel="stylesheet" href="css/index/reset.css">
   <link rel="stylesheet" href="css/index/header.css">
   <link rel="stylesheet" href="css/index/schedule.css">
+  <link rel="stylesheet" href="css/index/first_time.css">
+  <link rel="stylesheet" href="css/index/question.css">
   <link rel="stylesheet" href="css/index/contact.css">
   <link rel="stylesheet" href="css/index/footer.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
@@ -247,14 +249,6 @@
       <p>遂に映画化決定！！新規鬼滅の刃<br>誰しもが待ちわびていた遊郭編</p>
      </div>
 
- 
-  
-     <form action="testform" method="post">
-      @csrf
-      <input type="text" name="textbox1" >
-      <input type="text" name="textbox2" >
-      <input type="submit" value="送信ボタン" >
-  </form>  
 </div>
   </main>
 
