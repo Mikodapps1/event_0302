@@ -1,9 +1,12 @@
+/* contact/appointment/show.blade.phpはCSS共有 */
+
 .form_comment  {
-  margin: 50px 0;
+  margin: 40px 0;
 }
 
 .form_comment h1 {
   font-size: 36px;
+  margin-top: 120px;
   margin-bottom: 30px;
   text-align: center;
 }
@@ -16,12 +19,25 @@
   box-sizing: border-box;
 }
 
-form {
+/* showのCSS */
+.form_confirm {
+  font-size: 18px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+/* showのCSS */
+.form_confirm p {
+  line-height: 80px;
+}
+
+form .contact_post {
   max-width: 1000px;
   margin: 0 auto;
 }
 
-th,td {
+.contact tr {
   border-top:1px solid rgb(171, 217, 248);
   border-bottom:1px solid rgb(171, 217, 248);
 }
@@ -52,6 +68,7 @@ th,td {
 .contact input {
  padding: 10px;
 }
+
 .contact td #username,
 .contact td #furigana,
 .contact td #email,
@@ -63,10 +80,12 @@ th,td {
   width:  30px;
 }
 
+/* appointmentのCSS */
 .contact #number {
   width:  30px;
 }
 
+/* appointmentのCSS  */
 .contact #events {
   width: 80%;
   height: 42px;
@@ -78,18 +97,25 @@ margin-top: 100px;
 }
 
 .submit {
-  width: 300px;
-  height: 80px;
+  width: 200px;
+  height: 50px;
   font-size: 1.2rem;
   font-weight: bold;
   border: 1px solid black;
-  border-radius: 10px;
+  background-color: #faba5b;
+  border-radius: 5px;
   margin-bottom: 40px;
-  
+  color: #fff;
+  transition: 0.4s;
 }
 
 .submit:hover {
-  background-color: rgb(243, 222, 222);
+  cursor: pointer;
+  background-color: rgb(252, 218, 174);
+}
+
+.submit a {
+  text-decoration: none;
 }
 
 @media screen and (max-width:600px) {
@@ -97,9 +123,19 @@ margin-top: 100px;
   .contact td {
     display: block;
   }
+  .contact th {
+    padding: 30px ;
+  }
   .contact td {
     padding-left: 20px;
+    padding-bottom: 20px;
+  }
+ }
+
+
+@media screen and (max-width:480px) {
+  .form_comment h1 {
+    margin-top: 20px;
   }
 }
-
 

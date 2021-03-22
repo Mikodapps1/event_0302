@@ -8,6 +8,11 @@ class AppointmentController extends Controller
 {
     public function index () 
     {
-        return view('appointment');
+        return view('/appointment');
+    }
+    
+    public function show(Request $request) 
+    {
+        return view('/appointment',compact('request'));
     }
 }

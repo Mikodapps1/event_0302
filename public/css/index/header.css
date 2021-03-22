@@ -2,127 +2,24 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
 @import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP');
 
-/* -----------ここからヘッダー------------ */
-.top_category {
-  display: flex;
-  justify-content: space-between;
-  margin: 10px 0;
-}
-
-@keyframes titleAnimation {
-  0%{
-    letter-spacing: 0.2em;
-    opacity: 0;
-  }
-}
-
-.left > h1 {
-  font-family: cursive ,sans-serif;
-  font-size: 50px;
-  animation: titleAnimation 1.5s;
-
-}
-
-
-.right > p {
-  margin: 0px;
-  line-height: 2;
-}
-
-.header_image {
- position: relative;
-}
-
-.content {
-display: table;
-table-layout: fixed;
-text-align: center;
-width:100%;
-margin-bottom:20px;
-background:rgba(255, 255, 255, 0.4);
-position: absolute;
-top: 0;
-}
-
-.content li{
-cursor: pointer;
-display: table-cell;
-vertical-align:middle;
-border:1px solid #FFF;
-height: 50px;
-font-family: 'Caveat', cursive;
-box-sizing: border-box;
-}
-
-.content li :hover {
-  color:rgb(22, 153, 109);
-  text-decoration: underline;
-  background-color: #fff;
-  border-radius: 4px;
-  box-shadow: 0 5px 10px black;
-  transform: translate(0, -5px);
-}
-
-.content li a {
-  display: block;
-  height: 50px;
-  text-decoration: none;
-  color:black;
-}
-
-.content li > a:before{
-  display: block;
-  padding-top:10px;
-	font-family: FontAwesome;
-}
-
-.menu1 > a:before{
-  content: '\f015';
-}
-
-.menu2 > a:before{
-	content: '\f298';
-}
-
-.menu3 > a:before{
-	content: '\f129';
-}
-
-.menu4 > a:before{
-	content: '\f505';
-}
-
-.menu5 > a:before{
-	content: '\f059';
-}
-
-.menu6 > a:before{
-	content: '\f164';
-}
-
-/* 追加 */
-@import url('https://fonts.googleapis.com/css?family=Sacramento');
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
-@import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP');
-
  /* -----------ここからヘッダー------------  */
 .top_category {
   display: flex;
   justify-content: space-between;
-  margin: 10px 0;
+  margin: 10px 10px;
 }
 
-@keyframes titleAnimation {
+/* @keyframes titleAnimation {
   0%{
     letter-spacing: 0.2em;
     opacity: 0;
   }
-}
+} */
 
 .left > h1 {
   font-family: cursive ,sans-serif;
   font-size: 50px;
-  animation: titleAnimation 1.5s;
+  /* animation: titleAnimation 1.5s; */
 }
 
 .right > p {
@@ -130,13 +27,20 @@ box-sizing: border-box;
   line-height: 2;
 }
 
+.header_menu {
+  position: relative;
+ }
+
+/* ハンバーガーアイコン */
 .sp_menu .open{
   cursor:pointer;
-  position: absolute;
-  top: 110px;
+  position: fixed;
+  top: 60px;
   right: 20px;
-  font-size: 20px;
+  font-size: 30px;
   opacity: 0;
+  color: #fff;
+  z-index: 2;
 }
 .sp_menu .open_icon {
   display: none;
@@ -144,95 +48,157 @@ box-sizing: border-box;
 
 .sp_menu .close {
   cursor:pointer;
-  position: absolute;
-  top: 110px;
-  right: 20px;
-  font-size: 20px;
+  position: fixed;
+  top: 60px;
+  right: 22px;
+  font-size: 30px;
   opacity: 0;
-  transition: 1s;
+  color: #fff;
+  transition: 0.2s;
+  z-index: 2;
 }
 .sp_menu .close_icon {
   transition: 1s;
   opacity: 1;
 }
-
-.header_image {
- position: relative;
-}
-.header_image img {
- height: 400px;
-}
-
-.content {
-display: table;
-table-layout: fixed;
-text-align: center;
-width:100%;
-margin-bottom:20px;
-background:rgba(255, 255, 255, 0.4);
-position: absolute;
-top: 0;
-}
-
-.content li{
-cursor: pointer;
-display: table-cell;
-vertical-align:middle;
-border:1px solid #FFF;
-height: 50px;
-font-family: 'Caveat', cursive;
-box-sizing: border-box;
-}
-
-.content li :hover {
-  color:rgb(22, 153, 109);
-  text-decoration: underline;
-  background-color: #fff;
-  border-radius: 4px;
-  box-shadow: 0 5px 10px black;
-  transform: translate(0, -5px);
-}
-
-[class^="content"] li a {
+.sp_menu .bg_color {
   display: block;
+  width: 45px;
+  height: 45px;
+  background-color: skyblue;
+  opacity: 0.8;
+  border-radius: 50%;
+  position: fixed;
+  top: 52px;
+  right: 10px;
+  z-index: 1;
+}
+
+ /* トップ動画  */
+.home_video {
+  width: 100%;
+  height: 50vh;
+  position: relative;
+  overflow: hidden;
+}
+
+video {
+  position: absolute;
+  /* top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  background: url('../images/bg.png') no-repeat;
+  background-size: cover; */
+  z-index: -1;
+}
+
+.bg-white {
+  color:#fff;
+}
+
+.letter {
+  width: 80%;
+  text-align: center;
+}
+
+.letter_message {
+  position: absolute;
+  font-size: 2.6rem;
+  font-weight: bold;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+}
+
+.letter_message span {
+  opacity: 0;
+  transition: .6s ease-in-out;
+}
+
+ .content {
+  display: table;
+  table-layout: fixed;
+  text-align: center;
+  width:100%;
+  margin-bottom:20px;
+  background:#2988BC;
+  position: absolute;
+  top: 0;
+  }
+
+  .content li{
+  cursor: pointer;
+  display: table-cell;
+  vertical-align:middle;
+  border:1px solid #FFF;
   height: 50px;
-  text-decoration: none;
-  color:black;
-}
-[class^="content"] li a:before{
-  display: block;
-  padding-top:10px;
-	font-family: FontAwesome;
-}
+  font-family: 'Caveat', cursive;
+  box-sizing: border-box;
+  }
+
+  .content li :hover {
+    transition: 0.8s;
+    color:#2988BC;
+    text-decoration: underline;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 5px 10px black;
+    transform: translate(0, -5px);
+  }
+
+  [class^="content"] li a {
+    display: block;
+    height: 50px;
+    text-decoration: none;
+    color:#fff;
+  }
+
+  [class^="content"] li a:before{
+    display: block;
+    padding-top:10px;
+    font-family: FontAwesome;
+  }
 
 .content_hbg {
-  width: 100%;
-  position: absolute;
-  top: 0px;
+  width: 60%;
+  position: fixed;
+  top: 110px;
+  right: 0;
   text-align: center;
-  padding-top: 10px;
   letter-spacing: 5px;
-  background-color: #f5deb3;
-  text-decoration: underline;
-  transform: translateY(20px);
-  transition:  0.6s;
+  background-color: #2988BC;
+  transform: translateX(481px);
+  transition:  0.1s;
   opacity: 0;
   pointer-events: none;
-
 }
-/* / toggleClassで追加する / */
+
+/* / toggleClassでcontent_btnにclass追加 / */
 .overlay {
-  opacity: 0.8;
-  transition: ease-in 0.6s;
+  opacity: 1;
+  transition: ease-in 0.4s;
   transform: none;
+  z-index: 2;
   pointer-events: auto;
 }
+.overlay a {
+  border: 1px solid white;
+}
 .overlay a:hover {
-  color: red;
+  transition: 0.8s;
+  color:#2988BC;
+  /* text-decoration: underline; */
+  background-color: #fff;
 }
 .content_hbg li a:before {
   display: inline-block;
+  padding-top: 18px;
 }
+
 .menu1 > a:before{
   content: '\f015';
 }
@@ -256,8 +222,18 @@ box-sizing: border-box;
 .menu6 > a:before{
 	content: '\f164';
 }
+.menu7 > a:before{
+	content: '\f0ea';
+}
+.menu8 > a:before{
+	content: '\f2a0';
+}
 
-@media screen and (max-width:481px){
+@media screen and (max-width:480px){
+  main .title {
+    margin-top: 0;
+    margin-top: 10px;
+  }
   .top_category {
     display: block;
   }
@@ -265,18 +241,23 @@ box-sizing: border-box;
     transition: 1s;
     opacity: 1;
   }
+ 
   .left > h1{
     margin-bottom: 10px;
   }
-  .header_image img  {
-    height: 300px;
-  }
+
   .content li {
     display: none;
   }
 }
-@media screen and (min-width:481px){
+@media screen and (min-width:480px){
   .overlay {
+    opacity: 0;
+  }
+  .sp_menu .close {
+    opacity: 0;
+  }
+  .sp_menu .bg_color {
     opacity: 0;
   }
 }

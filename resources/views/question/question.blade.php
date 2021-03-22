@@ -2,10 +2,10 @@
 @section('content')
 
 <title>content</title>
-<br><br><br><br>
+
 <div class="QA">
     <h1>よくあるご質問</h1>
-    <p>お客様から寄せられたご質問と回答を掲載しております。その他のご質問は<a href="contact">Contact</a> よりお問い合わせください。</p>
+    <p>お客様から寄せられたご質問と回答を掲載しております。その他のご質問は<a href="contact">＜Contact＞</a> よりお問い合わせください。</p>
   </div>
 
 <dl class="QA_content">

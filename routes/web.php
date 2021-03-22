@@ -30,6 +30,9 @@ Route::get('/contact', 'ContactController@index')->name('input');;
 
 Route::get('/appointment', 'AppointmentController@index');
 
+Route::post('/appointment', 'AppointmentController@show');
+
+
 // 入力画面（input.blade.php）でsubmit押した時に実行
 // Route::post('/contactshow','ContactController@show')->name('show');
 

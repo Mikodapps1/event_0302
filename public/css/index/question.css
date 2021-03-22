@@ -4,6 +4,7 @@
 
 .QA h1 {
   font-size: 36px;
+  margin-top: 120px;
   margin-bottom: 30px;
   text-align: center;
 }
@@ -14,11 +15,20 @@
   margin: 0 auto;
   padding: 0 20px;
 }
+.QA a {
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 5px;
+  padding: 2px;
+}
+.QA a:hover {
+  text-decoration: underline;
+}
 
 .QA_content .flame {
  max-width: 1000px;
  margin: 0 auto;
- border-radius: 15px;
+ border-top:1px solid rgb(171, 217, 248);
 }
 
 .QA_content .flame:not(:first-child){
@@ -30,7 +40,7 @@
 }
 
 .QA_content dt {
-  padding: 10px;
+  padding: 30px 10px 10px;
   font-weight: bold;
   font-size: 18px;
 }
@@ -59,4 +69,10 @@
 .QA_content dd:before {
   content: 'A';
   background-color: #ffa51a;
+}
+
+@media screen and (max-width:480px) {
+  .QA h1 {
+    margin-top: 20px;
+  }
 }

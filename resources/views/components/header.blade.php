@@ -43,7 +43,6 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
   <link rel="stylesheet" href="fullcalendar/main.css" />
   <link rel="stylesheet" href="css/index/home.css">
-  <link rel="stylesheet" href="css/index/movie.css">
 
   <!-- --font-awsome-- -->
   <script src="https://kit.fontawesome.com/720c0d4f32.js" crossorigin="anonymous"></script>
@@ -67,11 +66,12 @@
         <div class="sp_menu">
           <span class="open"><i class="fas fa-bars"></i></span>
           <span class="close"><i class="fas fa-times"></i></span>
+          <span class="bg_color"></span>
         </div>
       </div>
     </div>
-    <div class="header_image">
-   
+
+    <div class="header_menu">
       <ul class="content" >
         <li class="menu1"><a href="home">Home</a></li>
         <li class="menu2"><a href="schedule">Schedule</a></li>
@@ -83,12 +83,14 @@
       <!-- ハンバーガーメニュー -->
       <div class="content_hbg">
         <ul>
-          <li class="menu1"><a href="/app_event/public/">Home</a></li>
+          <li class="menu1"><a href="home">Home</a></li>
           <li class="menu2"><a href="schedule">Schedule</a></li>
           <li class="menu3"><a href="info">Info</a></li>
           <li class="menu4"><a href="first_time">First time</a></li>
           <li class="menu5"><a href="question">Question</a></li>
-          <li class="menu6"><a href="contactfix/index">Contact</a></li>
+          <li class="menu6"><a href="contact">Contact</a></li>
+          <li class="menu7"><a href="">過去のイベント特集</a></li>
+        <li class="menu8"><a href="">緊急連絡先</a></li>
         </ul>
       </div>
     </div>

@@ -1,7 +1,27 @@
 @extends('layouts.app')
 @section('content')
 <title>Appointment</title>
-<br><br><br><br>
+
+<!-- CSSはcontact.cssと共通 -->
+{{-- こっちでも表示できる --}}
+<script language="javascript">
+
+  function rdo(n){
+  var m=document.f.r.length - 0;
+  var j=n.value;
+  if(n.checked){
+  for(i=0;m>i;i++){
+  var k=""+i;
+  document.getElementById(k).style.display="none";}
+  document.getElementById(j).style.display="inline";}
+  }
+  </script>
+  
+  <form name="f" id="f">
+    <td><input type="radio" name="r" id="r" value="0" onClick="rdo(this);">男性:</td>
+    <td><input type="radio" name="r" id="r" value="1" onClick="rdo(this);">女性:
+    <span name="0" id="0" style="display:none;">お支払金額：{{$request['man_price1']}}</span><span name="1" id="1" style="display:none;">お支払金額：{{$request['woman_price1']}}</span></td>
+  </form>
 <!-- CSSはcontact.cssと共通 -->
 <div class="form_comment">
     <h1>予約フォーム</h1>
@@ -39,10 +59,22 @@
       </tr>
 
       <!-- ラジオボタンで男か女かどちらかを選ばせるために、name属性を揃えている。 -->
-      <tr>
+       <tr>
         <th><span>必須</span><label>性別</label></th>
-        <td><label for="men"></label> <input type="radio" name="sex" id="men">男性
-          <label for="women"></label><input type="radio" name="sex" id="women">女性</td>
+        <td><label for="men"></label> <input type="radio" name="sex" value="man">男性 : <?php echo $request['man_price1']?>
+          <label for="women"></label><input type="radio" name="sex" value="woman">女性 : <?php echo $request['woman_price1']?></td>
+        </tr>
+
+          {{-- <p>
+            <input type="radio" name="mountain" value="富士山">富士山
+           <input type="radio" name="mountain" value="エベレスト">エベレスト
+           <input type="radio" name="mountain" value="ヒマラヤ">ヒマラヤ
+        </p> --}}
+        {{-- </div> --}}
+          {{-- <th><p>{{$request['man_price1']}}</p></th>
+          <th><p>{{$request['woman_price1']}}</p></th> --}}
+
+
       </tr>
 
       <tr>
@@ -56,14 +88,8 @@
       </tr>
 
       <tr>
-        <th><span>必須</span><label for="events">参加イベント</label></th>
-        <td><select name="events" id="events">
-                <option value="" selected="selected">--選択して下さい。</option>
-                <option value="">PHPで入れる</option>
-                <option value="">もっちの仕事</option>
-                <option value="">お願いましす</option>
-              </select>
-        </td>
+        <th>・<label for="events">参加イベント</label></th>
+        <td><p>{{$request['title']}}</p></td>
       </tr>
 
       <tr>
@@ -84,5 +110,6 @@
     </div>
   </form>
 
+    
 
 @endsection
